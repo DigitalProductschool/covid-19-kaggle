@@ -15,4 +15,34 @@ In response to the COVID-19 pandemic, the White House and a coalition of leading
   <br/>
   
   
-* For pre-processing
+* For pre-processing:
+  - Now that our data is subject-oriented, we need to remove irrelevent terms, symbols, and punctuation marks.
+  
+* For feature engineering:
+  - The method used for converting the preprocessed text data into feature vectors is called feature engineering. For this section, we have used four different methods to covert full body texts into feature vectors.
+**TF-IDF**, **Doc2Vec**, **Doc2Vec and TF-IDF together**, **Bigram phrase modeling and Doc2Vec**.
+Afterwards the PCA was implemented on feature vectors to reduce the dimensionality to 2 so that we can visualize the articles in space.
+
+* For visualization and evaluation:
+  - Clustering (unsupervised learning method):
+    K-means clustering is an interesting way of finding patterns regarding similarity of articles based on their content. With the help of elbow method we found the optimal numbers of clustering.
+    <br/>
+
+
+<p align="center">
+  <img src="/Assets/covid19_elbow(1).png"  width="250" height="250" title = "elbow method, K=10">
+</p>
+<p align="center">
+  <img src="/Assets/covid19_label_TFIDF(1).png" width="250" height="250" title = "TFIDF">
+  <img src="/Assets/covid19_label_Doc2Vec.png" width="250" height="250" title = "Doc2Vec">
+  <img src="/Assets/covid19_label_Doc2Vec_TFIDF.png" width="250" height="250" title = "TFIDF & Doc2Vec"> 
+  <img src="/Assets/dmm_dbow_pca_k10.png" width="222" height="218" title = "Bigram & Doc2Vec (dmm +dbow)">
+ </p>
+
+  - To quantitatively measure the feature vectors obtained from different algorithms, the S. Vajda et al. [5](https://www.researchgate.net/publication/316550769_A_Fast_k-Nearest_Neighbor_Classifier_Using_Unsupervised_Clustering) proposes an algorithm which can be briefed as follow. Firstly we cluster all the feature vectors thus labels for all the feature vectors are obtained. Now our current labeled data can be splited into training and testing sets. Thereafter, we perform K-Nearest Neighbour classification of the test set using the labels of the training set and messure the accuracy of KNN. The results of different algorithms have been compared in the bar graph. It was observed that TF-IDF vectorization performed better than the other algorithms.
+  <br/>
+<p align="center">
+  <img src="/Assets/output_31_1.png"  width="300" height="300">
+</p>
+
+
