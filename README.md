@@ -42,7 +42,13 @@ Afterwards the PCA was implemented on feature vectors to reduce the dimensionali
   - To quantitatively measure the feature vectors obtained from different algorithms, the S. Vajda et al. [5](https://www.researchgate.net/publication/316550769_A_Fast_k-Nearest_Neighbor_Classifier_Using_Unsupervised_Clustering) proposes an algorithm which can be briefed as follow. Firstly we cluster all the feature vectors thus labels for all the feature vectors are obtained. Now our current labeled data can be splited into training and testing sets. Thereafter, we perform K-Nearest Neighbour classification of the test set using the labels of the training set and messure the accuracy of KNN. The results of different algorithms have been compared in the bar graph. It was observed that TF-IDF vectorization performed better than the other algorithms.
   <br/>
 <p align="center">
-  <img src="/Assets/output_31_1.png"  width="300" height="300">
+  <img src="/Assets/Comparison of different algorithms(1).png"  width="300" height="300">
 </p>
 
+  * For finding answers:
+    - To find the most relevant documents to the answers requires finding a good similarity measure. Therefore the task description was pre-processed as same as body text documents, then we projected the task description to the same feature space as the body text documents (pre-trained TF-IDF model and pre-trained PCA model).
+For comparing documents cosine similarity was used. This is a better choice because even if a document is far apart in the euclidean distance (due to the size of the document) it could still be oriented closer.
+We have also formed word clouds of the top 20 most relevant documents to see the top keywords.
 
+* Supervised Qualitative Analysis of Results:
+  - A supervised evaluation was conducted to better judge and compare the performance of the algorithms. Dr. Hassan Vahidnezhad evaluated the word clouds along with the looking at the table containing the top 10 most similar documents. Based on his expert opinion, TF-IDF performed better than other algorithms based on the table and keywords that the doctor observed.
