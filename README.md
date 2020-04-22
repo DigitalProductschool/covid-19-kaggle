@@ -52,3 +52,19 @@ We have also formed word clouds of the top 20 most relevant documents to see the
 
 * Supervised Qualitative Analysis of Results:
   - A supervised evaluation was conducted to better judge and compare the performance of the algorithms. Dr. Hassan Vahidnezhad evaluated the word clouds along with the looking at the table containing the top 10 most similar documents. Based on his expert opinion, TF-IDF performed better than other algorithms based on the table and keywords that the doctor observed.
+  
+  
+  
+  
+
+### Documents relevant to general task 3 description
+
+
+
+
+|    | title  | abstract  | authors  | journal | body-text   | cosine-similarity  |   |   |   |
+|---|---|---|---|---|---|---|---|---|---|
+| 26261  | Presumptive meningoencephalitis secondary to extension of otitis mediainterna caused by Streptococcus equi subspecies zooepidemicus in a cat  |   |  Martin-Vaquero, Paula; da Costa, Ronaldo C.; Daniels, Joshua B.  | Journal of Feline Medicine & Surgery | A 5-year-old castrated male domestic longhair cat was presented with neurological signs consistent with a central vestibular lesion and left Horner's syndrome. Computed tomography images revealed hyperattenuating, moderately contrast-enhancing material within the left tympanic bulla, most consis | 1.0  |   |   |   |   |
+| 18620  | Conservation of nucleotide sequences for molecular diagnosis of Middle East respiratory syndrome coronavirus, 2015  |   | Furuse, Yuki; Okamoto, Michiko; Oshitani, Hitoshi  | International Journal of Infectious Diseases  | Middle East respiratory syndrome coronavirus (MERS-CoV) is an enveloped virus with a positive-sense RNA genome. Infection with the virus causes severe respiratory symptoms in humans, with a case fatality rate as high as 37%. 1 Camels may be a source of infection to humans. 2 Human-to-human trans  | 1.0  |   |   |   |
+| 18448  | Chapter 68 Acute Colitis in Horses  |   | McConnico, Rebecca S. | Robinson's Current Therapy in Equine Medicine  |A cute colitis is a common cause of rapid debilitation and death in horses. More than 90% of untreated horses with this condition die or are euthanized, but horses that are treated appropriately usually respond and gradually recover over a 7-to 14-day period. Colitis-associated diarrhea is spora   |  1.0 |   |   |   |
+| 34891  | Genotyping of clinically relevant human adenoviruses by array-in-well hybridization assay  | A robust oligonucleotide array-in-well hybridization assay using novel up-converting phosphor reporter technology was applied for genotyping clinically relevant human adenovirus types. A total of 231 adenovirus-positive respiratory, ocular swab, stool and other specimens from 219 patients collec  | Ylihärsilä, M.; Harju, E.; Arppe, R.; Hattara, L.; Hölsä, J.; Saviranta, P.; Soukka, T.; Waris, M.  | Clinical Microbiology and Infection  | Human adenoviruses (hAdVs) belong to the genus Mastadenovirus of the family Adenoviridae. There are presently 57 different hAdV types grouped into seven species A to G [1] . Different types cause a wide range of acute and chronic diseases. Acute respiratory disease is predominantly caused by the  |   1.0|   |   |   |
